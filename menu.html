@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEER TOWN- MENU</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<style>
+
+    body{
+        background-image: url('back.jpg') ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+
+    p{
+        color: darkblue;
+    }
+
+     .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Dropdown button style */
+        .dropdown button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Dropdown content (hidden by default) */
+        .dropdown .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        /* Dropdown links */
+        .dropdown .dropdown-content a {
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            color: #333;
+        }
+
+        /* Dropdown links on hover */
+        .dropdown .dropdown-content a:hover {
+            background-color: #f9f9f9;
+        }
+
+        /* Show the dropdown content when the dropdown button is hovered over */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        #betLink{
+            color: wheat;
+            text-decoration: underline;
+        }
+
+        #fir{
+            color: white;
+        }
+
+        #bro{
+            color: brown;
+        }
+
+        #top{
+            color: lawngreen;
+        }
+
+        #topd{
+            color: lawngreen;
+        }
+</style>
+
+<body>
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <span class="ml-3 text-xl">Beer Town</span>
+            </a>
+            <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400 flex flex-wrap items-center text-base justify-center">
+                <a href="index.html" class="mr-5 hover:text-gray-900">HOME</a>
+                <a href="#about" class="mr-5 hover:text-gray-900">ABOUT</a>
+    
+                <!-- Dropdown container -->
+                <div class="dropdown">
+                    <button> MENU&#9662;</button>
+                    <div class="dropdown-content">
+                        <a href="menu.html">FOOD</a>
+                        <a href="drinks.html">DRINKS</a>
+                    </div>
+                </div>
+                <!-- End of Dropdown container -->
+    
+                <a href="#" class="mr-5 hover:text-gray-900">CONTACT</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="text-gray-600 body-font">
+        <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+          <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600">
+          <div class="text-center lg:w-2/3 w-full">
+            <h1 id="fir" class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Beer Town's Menu</h1>
+            <p class="mb-8 leading-relaxed">Now we unleash the menu of Beer Town in front of you. Taking from chinese food to indian , western to eastern food , south to north, every type and variety of food is seen in our menu. For your thrist to be fulfilled , experience the world class taste of wine and beer.</p>
+            <p class="mb-8 leading-relaxed">Select Finger Licking Food Below. For wine and beer menu, <a id="betLink" href="drinks.html">CLICK HERE</a> or choose from menu.</p>
+            
+          </div>
+        </div>
+      </section>
+
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap w-full mb-20">
+            <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+              <h1 id="fir" class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Top in Veg</h1>
+              <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+            </div>
+            <p id="top" class="lg:w-1/2 w-full leading-relaxed ">It is a list of most famous veg items in our menu which people like to each too much. After you ate them, you will say "ONCE MORE!".</p>
+          </div>
+          <div class="flex flex-wrap -m-4">
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/720x400" alt="content">
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Name Of The Dish</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Chichen Itza</h2>
+                <p id="bro" class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/721x401" alt="content">
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Name Of The Dish</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Colosseum Roma</h2>
+                <p id="bro" class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/722x402" alt="content">
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Name Of The Dish</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Great Pyramid of Giza</h2>
+                <p id="bro" class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/723x403" alt="content">
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Name Of The Dish</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">San Francisco</h2>
+                <p id="bro" class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap w-full mb-20">
+            <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+              <h1 id="fir" class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Top in Non-Veg</h1>
+              <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+            </div>
+            <p id="topd" class="lg:w-1/2 w-full leading-relaxed ">You are non-veg? No problem! Beer Town also includes a wide range of finger-licking non-veg food. So enjoy eating the tastiest meat.</p>
+          </div>
+          <div class="flex flex-wrap -m-4">
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/720x400" alt="content">
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Name Of The Dish</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Chichen Itza</h2>
+                <p id="bro" class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/721x401" alt="content">
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Name Of The Dish</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Colosseum Roma</h2>
+                <p id="bro" class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/722x402" alt="content">
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Name Of The Dish</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Great Pyramid of Giza</h2>
+                <p id="bro" class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/723x403" alt="content">
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Name Of The Dish</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">San Francisco</h2>
+                <p id="bro" class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+</body>
+</html>
